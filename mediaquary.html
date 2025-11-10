@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            background-color: rgb(25, 24, 24);
+        }
+        .menu-icon{
+            display: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: rgb(212, 211, 211);
+            font-size: 18px;
+            margin: 0 15px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+        @media (max-width:600px){
+            .nav-links{
+                display: none;
+            }
+            .menu-icon{
+                display: block; 
+            }
+        }
+
+        .nav-links{
+            display: flex;
+            gap: 20px;
+            font-weight: bolder;
+        }
+
+        .nav-links a:hover{
+            color: thistle;
+            text-decoration: underline;
+        }
+
+        img{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.gaxbMMDfbIuymLos_WTWJQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" height="70px" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Contact</a>
+            
+        </div>
+        <div class="menu-icon">&#9776</div>
+    </nav>
+</body>
+</html>
